@@ -1,7 +1,3 @@
 spring:
-  jpa:
-    hibernate.ddl-auto:create
-  datasource:
-    url: jdbc:postgresql://database-1.culukebfsrhu.ap-northeast-2.rds.amazonaws.com:5432/postgres
-    username: postgres
-    password: archer!0
+  profiles:
+    include: db

@@ -1,8 +1,6 @@
 server:
   port: 8081
 spring:
-  profiles:
-    include: ops-db
   jpa:
     properties:
       hibernate:

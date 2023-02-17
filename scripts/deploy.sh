@@ -4,13 +4,12 @@ REPOSITORY=/home/ec2-user/app/step3
 PROJECT_NAME=mouken
 
 echo "> Copy Build files"
+echo "> cp $REPOSITORY/zip/*.jar $REPOSITORY/"
 cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> check PID of application now running"
-
 CURRENT_PID=$(pgrep -fl mouken | grep jar | awk '{print $1}')
 # CURRENT_PID=$(pgrep -f $PROJECT_NAME)
-
 echo "> pid : $CURRENT_PID"
 
 if [ -z "$CURRENT_PID" ]; then
@@ -22,9 +21,7 @@ else
 fi
 
 echo "> deploy new app"
-
 JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
-
 echo "> JAR Name: $JAR_NAME"
 echo "> authorization $JAR_NAME"
 chmod +x $JAR_NAME

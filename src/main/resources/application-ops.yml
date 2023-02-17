@@ -1,5 +1,11 @@
 app:
   host: http://ec2-3-36-5-89.ap-northeast-2.compute.amazonaws.com/
-#spring:
-#  profiles:
-#    include: ops-db
+spring:
+  profiles:
+    include: ops-db
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  session:
+    store-type: jdbc

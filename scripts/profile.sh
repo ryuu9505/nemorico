@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 function find_idle_profile() {
-
   RESPONSE_CODE=$(curl -s -o /dev/null -w "${http_code}" http://localhost/profile)
-  echo "RESPONSE_CODE : ${RESPONSE_CODE}"
+
   if [ ${RESPONSE_CODE} -ge 400 ]
   then
     CURRENT_PROFILE=ops2

@@ -1,5 +1,5 @@
 spring:
   profiles:
-    include: ops-db
+    include: dev-db
   pid:
     file: /home/ec2-user/app/step2/moukenn.pid

@@ -1,2 +1,5 @@
 app:
   host: http://ec2-3-36-5-89.ap-northeast-2.compute.amazonaws.com/
+#spring:
+#  profiles:
+#    include: ops-db

@@ -1,5 +1,3 @@
 spring:
-  profiles:
-    include: db
   pid:
     file: /home/ec2-user/app/step2/moukenn.pid

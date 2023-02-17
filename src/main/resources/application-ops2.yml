@@ -1,0 +1,11 @@
+server:
+  port: 8082
+spring:
+  profiles:
+    include: ops-db
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  session:
+    store-type: jdbc

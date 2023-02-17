@@ -6,4 +6,4 @@ spring:
     group:
       "ops1": "ops1,ops-db"
       "ops2": "ops2,ops-db"
-#      "ops": "ops,ops-db"
+      "ops": "ops,ops-db"

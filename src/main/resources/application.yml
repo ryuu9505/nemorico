@@ -2,7 +2,7 @@ spring:
   pid:
     file: /home/ec2-user/app/step2/moukenn.pid
   profiles:
-    active: ops1
+    active: ops
     group:
       "ops1": "ops1,ops-db"
       "ops2": "ops2,ops-db"

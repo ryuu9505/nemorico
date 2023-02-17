@@ -1,5 +1,9 @@
 spring:
-  profiles:
-    include: ops1, ops2
   pid:
     file: /home/ec2-user/app/step2/moukenn.pid
+  profiles:
+    active: ops
+    group:
+      ops: ops,ops-db
+#      ops1: ops1,ops-db
+#      ops2: ops2,ops-db

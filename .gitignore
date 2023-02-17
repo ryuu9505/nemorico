@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### Configurations ###
-application-db.yml
+application-ops-db.yml

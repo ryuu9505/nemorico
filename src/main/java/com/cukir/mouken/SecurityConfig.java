@@ -21,11 +21,4 @@ public class SecurityConfig {
 
         return http.build();
     }
-
-    @Bean
-    public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring()
-                .mvcMatchers("/assets/**")
-                .requestMatchers(PathRequest.toStaticResources().atCommonLocations());
-    }
 }

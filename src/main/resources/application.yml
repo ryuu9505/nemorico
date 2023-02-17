@@ -1,6 +1,6 @@
 spring:
   pid:
-    file: /home/ec2-user/app/step2/moukenn.pid
+    file: /home/ec2-user/app/step3/moukenn.pid
   profiles:
     active: ops
     group:

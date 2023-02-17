@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.cukir'
-version = '0.0.6-SNAPSHOT'
+version = '0.0.7-SNAPSHOT'
 sourceCompatibility = '17'
 
 configurations {

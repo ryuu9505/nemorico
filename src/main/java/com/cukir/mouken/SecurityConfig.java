@@ -16,7 +16,7 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests((requests) -> requests
-                        .antMatchers("/", "/test", "/app-profile").permitAll()
+                        .antMatchers("/", "/test", "/profile").permitAll()
                         .anyRequest().authenticated());
 
         return http.build();

@@ -17,6 +17,7 @@ sleep 10
 for RETRY_COUNT in {1..10}
 do
   RESPONSE=$(curl -s http://localhost:${IDLE_PORT}/profile)
+  echo "> RESPONSE: $RESPONSE"
   UP_COUNT=$(echo ${RESPONSE} | grep 'ops' | wc -l)
 
   if [ ${UP_COUNT} -ge 1 ]

@@ -4,7 +4,6 @@ REPOSITORY=/home/ec2-user/app/step3
 PROJECT_NAME=mouken
 
 echo "> Copy Build files"
-
 cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> check PID of application now running"
@@ -27,13 +26,10 @@ echo "> deploy new app"
 JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
 
 echo "> JAR Name: $JAR_NAME"
-
 echo "> authorization $JAR_NAME"
-
 chmod +x $JAR_NAME
 
 echo "> Run $JAR_NAME"
-
 nohup java -jar \
 	-Dspring.config.location=classpath:/application.yml,/home/ec2-user/app/application-ops-db.yml \
 	-Dspring.profiles.active=ops \
